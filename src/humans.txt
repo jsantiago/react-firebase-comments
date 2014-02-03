@@ -7,8 +7,7 @@
     Grunt - http://gruntjs.com/
     Bower - http://bower.io/
     Assemble - http://assemble.io/
-    Normalize.css - http://necolas.github.io/normalize.css/
-    Font Awesome - http://fontawesome.io/
     Less - http://lesscss.org/
     Browserify - http://browserify.org/
     React - http://facebook.github.io/react/
+    Bootstrap - http://getbootstrap.com/
