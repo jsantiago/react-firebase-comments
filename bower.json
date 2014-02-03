@@ -1,0 +1,9 @@
+{
+    "name": "react-firebase-comments",
+    "version": "0.0.1",
+    "devDependencies": {
+        "bootstrap": "3.1.x",
+        "firebase": "1.0.x",
+        "react": "0.8.x"
+    }
+}

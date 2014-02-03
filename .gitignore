@@ -1,0 +1,6 @@
+.DS_Store
+bower_components/
+node_modules/
+config.json
+dist/
+src/js/out.js
