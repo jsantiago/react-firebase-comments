@@ -58,24 +58,8 @@ module.exports = function(grunt) {
                 files: [
                     {
                         expand: true,
-                        cwd: 'src/data',
-                        src: '*.json',
+                        src: 'config.json',
                         dest: 'dist/data'
-                    }
-                ]
-            },
-            fonts: {
-                files: [
-                    {
-                        expand: true,
-                        src: 'fonts/**/*',
-                        dest: 'dist/css'
-                    },
-                    {
-                        expand: true,
-                        cwd: 'bower_components/font-awesome/',
-                        src: 'font/**/*',
-                        dest: 'dist'
                     }
                 ]
             },
@@ -131,6 +115,7 @@ module.exports = function(grunt) {
                 src: [
                     'bower_components/firebase/firebase.js',
                     'bower_components/react/react.js',
+                    'bower_components/jquery/jquery.js',
                     'src/js/out.js'
                 ],
                 dest: 'dist/js/<%= pkg.name %>-<%= cacheBuster %>.min.js'

@@ -2,10 +2,13 @@
 
 var CommentBox = require('./CommentBox.jsx');
 
-var site = window.location.hostname.replace(/\./g, '_') + window.location.pathname;
-var firebase = new Firebase('https://intense-fire-3862.firebaseio.com/'+site);
+var promise = $.getJSON('/data/config.json');
+$.when(promise).then(function(data){
+    var site = window.location.hostname.replace(/\./g, '_') + window.location.pathname;
+    var firebase = new Firebase(data.firebase.url+site);
 
-React.renderComponent(
-    <CommentBox data={firebase} />,
-    document.getElementById('comments')
-);
+    React.renderComponent(
+        <CommentBox data={firebase} />,
+        document.getElementById('comments')
+    );
+});

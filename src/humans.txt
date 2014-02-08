@@ -1,6 +1,6 @@
 /* TEAM */
 
-    Josh Santiago -- @jsantiago
+    J. Santiago -- @jsantiago
 
 /* SITE */
 
